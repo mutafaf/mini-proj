@@ -1,0 +1,106 @@
+ <style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    max-width: 98%;
+    margin: auto;
+  }
+  .thumbnail {
+    width: 22vw;
+    height: 22vw;
+
+    min-height: 200px;
+    min-width: 200px;
+    object-fit: cover;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+  #list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .fa-chevron-left.zoom {
+    left: 5%;
+  }
+  .fa-chevron-right.zoom {
+    right: 5%;
+  }
+  .fas.fa-chevron-left.zoom , .fas.fa-chevron-right.zoom {
+    position: absolute;
+    font-size: 3rem;
+    top: 40%;
+    cursor: pointer;
+  }
+  .insert-image {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    overflow: hidden;
+    color: #e20d0d;
+  }
+  .desc {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .galler {
+    max-width: 100%;
+    margin: auto;
+  }
+  .galleryh {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .zoomview {
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background: rgba(255,255,255,0.8);
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAABYElEQVRYR92Y0Q3CMAxErxswCiuwCYzAJIwAm7ACozACykek0jbxne1Ihfy1is6vl8SOO2HnY9o5HxjAA4AbgCuAd9IH0ZoWYBF6AjgCeAE4JUBKmj3AuVA1Lgopa7YAt4SikC7NLcCekBfSrbkEZIRUyJDmHFARYiHDmnPAO4CzI420Do4HroZ/ALiUh6iDLScjcF8fHNmDS7OrcHlfc6e6IKvV8J7iVuASoIyS2NWxuVU8eVANzMxvFgC1kjDB1Dnd6qTUYjUwM98snRZgCRI5kT1IE26ZZnpi2ZAUnAKY6SQNpwJmQEpwfweYtQ8lF5lTnLG0rbJo9jgMYJZzLkgLcBRc6xa0SnU/W+pGO0cv989dtyLODb+wZsDVtJGm9fdNk1UVPE6mNU0WXD2pCmRa08TCKZBpTZMKx0CmNU1euB5kWtMUhduCNDWty0K9au32FzDTOg6dwzg4FMAS/wCCTKIpRugyiAAAAABJRU5ErkJggg=='), auto;
+  }
+  .zoomview span {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .zoomview span img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tbin {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 2.3rem;
+    color: #e20d0d;
+    cursor: pointer;
+  }
+  .pagination {
+    background: black;
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.45rem;
+    cursor: pointer;
+  }
+  .date {
+    position: absolute;
+    z-index: 9;
+    font-size: 2rem;
+    color: white;
+    bottom: 4rem;
+    text-shadow: 1px 1px 1px #ececec, 2px 2px 2px black, 3px 3px 3px white, 4px 4px 4px #ececec, 5px 5px 5px black, 6px 6px 6px white;
+  }
+</style>
